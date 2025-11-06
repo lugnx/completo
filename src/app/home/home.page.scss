@@ -1,0 +1,25 @@
+// Estilos para las tarjetas de mensaje
+.mensaje-card {
+  &:hover {
+    transform: translateY(-5px);
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+// Estilos para el toast central
+:host {
+  .toast-centro {
+    text-align: center;
+    --background: rgba(255, 255, 255, 0.95);
+    --border-radius: 15px;
+    --color: rgb(50, 50, 50);
+    --min-width: 200px;
+    --max-width: 500px;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+}

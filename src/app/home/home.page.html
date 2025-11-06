@@ -1,0 +1,153 @@
+<ion-header>
+  <ion-toolbar style="--background: rgb(199, 175, 199);">
+    <ion-grid>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="10">
+          <ion-title style="font-size: 1.4em; color: rgb(50, 50, 50);">
+            <ion-icon name="person-circle" style="vertical-align: middle; font-size: 1.4em; margin-right: 10px;"></ion-icon>
+            Fernando
+          </ion-title>
+        </ion-col>
+        <ion-col size="2">
+          <ion-buttons slot="end">
+            <ion-button style="--color: rgb(50, 50, 50); font-size: 1.2em;">
+              <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" style="--background: rgb(245, 240, 245);">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-md="8" offset-md="2">
+        <ion-grid>
+          <ion-row>
+            <!-- Tarjeta Mensaje 1 -->
+            <ion-col size="12" size-sm="4">
+              <div (click)="seleccionarMensaje(1)" style="
+                background: rgb(240, 230, 240);
+                border-radius: 20px;
+                padding: 20px;
+                text-align: center;
+                cursor: pointer;
+                transition: transform 0.2s;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+              " class="mensaje-card">
+                <ion-icon name="checkmark-circle" style="
+                  font-size: 3.5em;
+                  color: rgb(80, 80, 80);
+                  margin-bottom: 15px;
+                "></ion-icon>
+                <div style="
+                  color: rgb(50, 50, 50);
+                  font-size: 1.2em;
+                  line-height: 1.4;
+                  text-align: center;
+                ">
+                  "Hola, llegue a mi destino me encuentro bien."
+                </div>
+              </div>
+            </ion-col>
+
+            <!-- Tarjeta Mensaje 2 -->
+            <ion-col size="12" size-sm="4">
+              <div (click)="seleccionarMensaje(2)" style="
+                background: rgb(240, 230, 240);
+                border-radius: 20px;
+                padding: 20px;
+                text-align: center;
+                cursor: pointer;
+                transition: transform 0.2s;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+              " class="mensaje-card">
+                <ion-icon name="alert-circle" style="
+                  font-size: 3.5em;
+                  color: rgb(255, 100, 100);
+                  margin-bottom: 15px;
+                "></ion-icon>
+                <div style="
+                  color: rgb(50, 50, 50);
+                  font-size: 1.2em;
+                  line-height: 1.4;
+                  text-align: center;
+                ">
+                  "¡Necesito ayuda!, ven a buscarme"
+                </div>
+              </div>
+            </ion-col>
+
+            <!-- Tarjeta Mensaje 3 -->
+            <ion-col size="12" size-sm="4">
+              <div (click)="seleccionarMensaje(3)" style="
+                background: rgb(240, 230, 240);
+                border-radius: 20px;
+                padding: 20px;
+                text-align: center;
+                cursor: pointer;
+                transition: transform 0.2s;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+              " class="mensaje-card">
+                <ion-icon name="call" style="
+                  font-size: 3.5em;
+                  color: rgb(80, 80, 80);
+                  margin-bottom: 15px;
+                "></ion-icon>
+                <div style="
+                  color: rgb(50, 50, 50);
+                  font-size: 1.2em;
+                  line-height: 1.4;
+                  text-align: center;
+                ">
+                  "Marcame en cuanto veas este mensaje"
+                </div>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer style="background: transparent; box-shadow: none; padding-bottom: 15px;">
+  <ion-grid>
+    <ion-row class="ion-justify-content-center ion-align-items-center">
+      <ion-col size="12" size-sm="auto" class="ion-text-center">
+        <ion-button (click)="personalizar()" style="
+          --background: rgb(199, 175, 199);
+          --color: rgb(50, 50, 50);
+          --border-radius: 15px;
+          text-transform: none;
+          font-size: 1.2em;
+          margin: 0 15px;
+          --padding-top: 15px;
+          --padding-bottom: 15px;
+          --padding-start: 25px;
+          --padding-end: 25px;
+        ">
+          <ion-icon name="create" style="margin-right: 8px; font-size: 1.2em;"></ion-icon>
+          Personalizar
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>
